@@ -17,16 +17,17 @@ Este arquivo é o registro mestre (editado diretamente, com histórico de versõ
 
 A partir de 06/09/2026, os gastos são lançados **por item** (produto individual, com preço unitário), não mais como total agregado da nota — isso permite comparar o preço de um mesmo produto ao longo do tempo. Notas anteriores a essa data, sem detalhamento por item disponível, ficam registradas como total agregado.
 
-## 2026
+**Valor unitário vs. valor total:** o valor unitário (R$/kg, R$/un) mede preço; o valor total mede quanto foi gasto (preço × quantidade). Comparações de "inflação"/preço usam sempre o valor unitário — o valor total sozinho não separa "ficou mais caro" de "comprei mais".
 
-### Setembro — Lançamentos agregados (sem detalhamento por item)
-| Data | Categoria | Descrição | Valor (R$) |
-|------|-----------|-----------|------------|
-| 05/09 | Alimentação | Supermercado Dalben (cebola, limão, carne, frango a passarinho) | 51,71 |
+## 2026
 
 ### Setembro — Lançamentos itemizados
 | Data | Categoria | Subcategoria | Item | Qtd | Valor unit. (R$) | Valor total (R$) | Origem |
 |------|-----------|--------------|------|-----|-------------------|-------------------|--------|
+| 05/09 | Alimentação | Verduras/Legumes | Cebola | 0,165 kg | 8,99/kg | 1,48 | Supermercado Dalben |
+| 05/09 | Alimentação | Frutas | Limão Tahiti | 0,425 kg | 14,99/kg | 6,37 | Supermercado Dalben |
+| 05/09 | Alimentação | Carnes | Carne bovina (Coxão Duro) | 0,620 kg | 58,99/kg | 36,57 | Supermercado Dalben |
+| 05/09 | Alimentação | Carnes | Frango a Passarinho | 0,228 kg | 31,99/kg | 7,29 | Supermercado Dalben |
 | 06/09 | Alimentação | Verduras/Legumes | Batata | 0,775 kg | 8,99/kg | 6,97 | Supermercado Dalben |
 | 06/09 | Alimentação | Carnes | Fraldinha | 0,648 kg | 65,99/kg | 42,76 | Supermercado Dalben |
 | 06/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 8,49 | 8,49 | Supermercado Dalben |
