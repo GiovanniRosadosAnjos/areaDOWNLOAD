@@ -19,4 +19,4 @@ Este arquivo é o registro mestre (editado diretamente, com histórico de versõ
 | Data | Categoria | Descrição | Valor (R$) |
 |------|-----------|-----------|------------|
 | 05/09 | Alimentação | Supermercado Dalben (cebola, limão, carne, frango a passarinho) | 51,71 |
-| 06/09 | Alimentação | Supermercado Dalben (batata, fraldinha, refrigerante, banana, uva, feijão, goma de mascar) | 83,79 |
+| 06/09 | Alimentação | Supermercado Dalben (batata, fraldinha, refrigerante, banana, Lua de Mel recheado, feijão, goma de mascar) | 83,79 |
