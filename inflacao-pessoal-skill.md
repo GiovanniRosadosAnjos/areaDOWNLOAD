@@ -61,6 +61,8 @@ Quando o usuário disser algo como "gastei X em Y", mandar a foto de uma nota fi
 3. Leia o arquivo atual no GitHub, adicione a(s) linha(s) na tabela do mês/ano e formato correspondente (crie a seção do mês/ano/formato se ainda não existir) e grave de volta com `create_or_update_file`.
 4. Confirme o lançamento em uma frase curta — não é necessário mostrar o arquivo inteiro a cada lançamento, mas ofereça mostrar a tabela se o usuário pedir para "ver como ficou".
 5. Se o usuário mandar uma nota de uma data já lançada como agregada anteriormente e agora tiver o detalhamento por item, ofereça substituir aquele lançamento agregado pela versão itemizada (não deixe os dois duplicados).
+6. **Desconto aplicado a um item específico**: quando a nota mostrar um desconto vinculado a um item (ex.: "Desconto Item:004"), registre o **valor líquido efetivamente pago** — tanto o valor unitário quanto o valor total já descontados — e inclua entre parênteses no nome do item o preço de tabela original (ex.: "Panqueca de Frios (tabela 45,99/kg, com desconto de R$7,91)"). O que importa pra rastrear preço de verdade é quanto se paga por unidade, não o preço de etiqueta.
+7. **Aumento de preço detectado no ato**: se o item lançado já existir no histórico na mesma origem e o valor unitário for diferente, aponte isso na confirmação curta (ex.: "esse subiu de R$X para R$Y desde [data]") — não espere o usuário perguntar depois; isso é o valor central da skill.
 
 ## Calculando a inflação pessoal (comparação ano a ano ou por produto)
 
