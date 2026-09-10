@@ -19,6 +19,8 @@ A partir de 06/09/2026, os gastos são lançados **por item** (produto individua
 
 **Valor unitário vs. valor total:** o valor unitário (R$/kg, R$/un) mede preço; o valor total mede quanto foi gasto (preço × quantidade). Comparações de "inflação"/preço usam sempre o valor unitário — o valor total sozinho não separa "ficou mais caro" de "comprei mais".
 
+**Descontos por item:** quando a nota traz um desconto aplicado a um item específico, o valor unitário e o valor total registrados já refletem o preço efetivamente pago (líquido do desconto), com uma observação na coluna Item indicando o preço de tabela original.
+
 ## 2026
 
 ### Setembro — Lançamentos itemizados
@@ -35,3 +37,7 @@ A partir de 06/09/2026, os gastos são lançados **por item** (produto individua
 | 06/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,124 kg | 61,99/kg | 7,69 | Supermercado Dalben |
 | 06/09 | Alimentação | Grãos/Cereais | Feijão Camil Carioca 1kg | 1 un | 9,49 | 9,49 | Supermercado Dalben |
 | 06/09 | Alimentação | Padaria/Doces | Goma de Mascar Trident 8g | 1 un | 3,69 | 3,69 | Supermercado Dalben |
+| 10/09 | Alimentação | Padaria/Doces | Pão Pullman 480g Tradicional | 1 un | 8,48 | 8,48 | Supermercado Dalben |
+| 10/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 10,49 | 10,49 | Supermercado Dalben |
+| 10/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,114 kg | 61,99/kg | 7,07 | Supermercado Dalben |
+| 10/09 | Alimentação | Outros | Panqueca de Frios (tabela 45,99/kg, com desconto de R$7,91) | 0,344 kg | 22,99/kg | 7,91 | Supermercado Dalben |
