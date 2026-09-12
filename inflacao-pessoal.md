@@ -41,3 +41,8 @@ A partir de 06/09/2026, os gastos são lançados **por item** (produto individua
 | 10/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 10,49 | 10,49 | Supermercado Dalben |
 | 10/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,114 kg | 61,99/kg | 7,07 | Supermercado Dalben |
 | 10/09 | Alimentação | Outros | Panqueca de Frios (tabela 45,99/kg, com desconto de R$7,91) | 0,344 kg | 22,99/kg | 7,91 | Supermercado Dalben |
+| 12/09 | Alimentação | Verduras/Legumes | Batata | 0,755 kg | 8,99/kg | 6,79 | Supermercado Dalben |
+| 12/09 | Alimentação | Frutas | Manga Tommy | 1,000 kg | 11,99/kg | 11,99 | Supermercado Dalben |
+| 12/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 10,49 | 10,49 | Supermercado Dalben |
+| 12/09 | Alimentação | Carnes | Fraldinha | 0,604 kg | 77,90/kg | 47,05 | Supermercado Dalben |
+| 12/09 | Alimentação | Outros | Maionese Hellmann's 500g Tradicional | 1 un | 11,99 | 11,99 | Supermercado Dalben |
