@@ -64,6 +64,24 @@ Quando o usuário disser algo como "gastei X em Y", mandar a foto de uma nota fi
 6. **Desconto aplicado a um item específico**: quando a nota mostrar um desconto vinculado a um item (ex.: "Desconto Item:004"), registre o **valor líquido efetivamente pago** — tanto o valor unitário quanto o valor total já descontados — e inclua entre parênteses no nome do item o preço de tabela original (ex.: "Panqueca de Frios (tabela 45,99/kg, com desconto de R$7,91)"). O que importa pra rastrear preço de verdade é quanto se paga por unidade, não o preço de etiqueta.
 7. **Aumento de preço detectado no ato**: se o item lançado já existir no histórico na mesma origem e o valor unitário for diferente, aponte isso na confirmação curta (ex.: "esse subiu de R$X para R$Y desde [data]") — não espere o usuário perguntar depois; isso é o valor central da skill.
 
+## Checagem de preço ANTES de comprar (decisão de compra)
+
+O usuário pode fotografar a **etiqueta de prateleira** de um produto (preço exposto na loja, antes de colocar no carrinho) e pedir uma comparação imediata, para decidir na hora se compra ou não. Isso é diferente de lançar uma nota fiscal — não houve compra ainda.
+
+1. **Dados necessários**: nome do produto e preço da etiqueta (a foto geralmente traz isso). A etiqueta normalmente **não mostra o nome da loja** — se não estiver óbvio pelo contexto da conversa, pergunte em qual mercado o usuário está.
+2. **Comparação imediata**: busque o histórico desse produto (ou nome equivalente) na mesma origem/loja. Se achar, calcule a variação percentual na hora e responda de forma direta e rápida (o usuário está parado no corredor do mercado, não é hora de textão): "Isso aqui tá R$X, a última vez que você comprou aqui foi R$Y (data) — subiu Z%" ou "tá estável" ou "mais barato que da última vez". Se não houver preço na mesma loja, mas houver em outra, avise que a comparação pode ser efeito-loja (ver seção de cálculo) e dê a referência mesmo assim, com essa ressalva.
+3. **Sem histórico prévio desse produto**: diga isso claramente — não dá pra saber se está caro, só registrar como primeira referência.
+4. **Registrar a checagem**: independentemente de o usuário decidir comprar ou não, registre a observação numa tabela separada de "Checagens de prateleira" (ver estrutura abaixo) — isso preserva o dado de preço mesmo quando o produto é rejeitado, o que é valioso justamente por não exigir uma compra pra existir. Pergunte (ou infira pela conversa) se o usuário comprou ou rejeitou, e registre isso numa coluna "Decisão".
+5. **Nunca misture checagens de prateleira com compras reais** na tabela de lançamentos itemizados — checagem não é gasto, não deve contar no total gasto nem na soma de categoria.
+
+Estrutura da tabela de checagens (mesma lógica de categoria/subcategoria/origem da tabela de compras):
+```markdown
+### Checagens de prateleira (sem compra confirmada)
+| Data | Categoria | Subcategoria | Item | Valor unit. (R$) | Origem | Decisão |
+|------|-----------|--------------|------|-------------------|--------|---------|
+| 15/09 | Alimentação | Higiene/Limpeza | Sabão em Pó OMO 1kg | 12,00/kg | Mercado B | Rejeitou (estava 10,00 há 1 semana) |
+```
+
 ## Calculando a inflação pessoal (comparação ano a ano ou por produto)
 
 **Regra central: nunca confundir efeito-preço, efeito-consumo e efeito-loja.** O valor total pago por um produto ou categoria muda por motivos independentes entre si:
@@ -72,6 +90,8 @@ Quando o usuário disser algo como "gastei X em Y", mandar a foto de uma nota fi
 - **Efeito-loja**: o produto foi comprado em estabelecimentos diferentes, que cobram preços diferentes pelo mesmo item no mesmo período (também não é inflação — é diferença de preço entre lojas).
 
 Uma variação no valor total, sozinha, não separa nenhum desses três. Sempre que for falar em "inflação" (variação de preço no tempo), a comparação correta é: **mesmo produto, mesma origem/loja (coluna Origem), valor unitário, em datas diferentes**. Se a origem mudar entre os dois pontos comparados, isso é um sinal de alerta — a diferença pode ser efeito-loja, não inflação.
+
+**Checagens de prateleira contam como dado de preço válido** para todas as comparações desta seção (efeito-preço, efeito-loja), mesmo quando o produto foi rejeitado — o preço exposto na loja é real independentemente da decisão de compra. A única coisa que elas nunca entram é no cálculo de gasto total/efeito-consumo (isso é exclusivo das compras de fato).
 
 Quando o usuário pedir o cálculo (ex.: "qual foi minha inflação pessoal esse ano", "compara com o IPCA", "quanto custava o limão em tal mês", "isso subiu porque ficou mais caro, porque comprei mais, ou porque troquei de mercado?", "qual mercado é mais barato para X"):
 
