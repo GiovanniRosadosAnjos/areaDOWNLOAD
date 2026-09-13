@@ -46,3 +46,8 @@ A partir de 06/09/2026, os gastos são lançados **por item** (produto individua
 | 12/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 10,49 | 10,49 | Supermercado Dalben |
 | 12/09 | Alimentação | Carnes | Fraldinha | 0,604 kg | 77,90/kg | 47,05 | Supermercado Dalben |
 | 12/09 | Alimentação | Outros | Maionese Hellmann's 500g Tradicional | 1 un | 11,99 | 11,99 | Supermercado Dalben |
+| 13/09 | Alimentação | Padaria/Doces | Bolo Panco 300g Chocoboy | 1 un | 14,49 | 14,49 | Supermercado Dalben |
+| 13/09 | Alimentação | Padaria/Doces | Chocolate Talento 85g | 1 un | 8,99 | 8,99 | Supermercado Dalben |
+| 13/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,108 kg | 61,99/kg | 6,69 | Supermercado Dalben |
+| 13/09 | Alimentação | Laticínios | Leite Ninho 1L Integral | 1 un | 7,49 | 7,49 | Supermercado Dalben |
+| 13/09 | Alimentação | Padaria/Doces | Bolo de Chocolate Tira | 0,248 kg | 54,99/kg | 13,64 | Supermercado Dalben |
