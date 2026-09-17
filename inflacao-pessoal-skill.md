@@ -84,12 +84,15 @@ Estrutura da tabela de checagens (mesma lógica de categoria/subcategoria/origem
 
 ## Calculando a inflação pessoal (comparação ano a ano ou por produto)
 
-**Regra central: nunca confundir efeito-preço, efeito-consumo e efeito-loja.** O valor total pago por um produto ou categoria muda por motivos independentes entre si:
+**Regra central: nunca confundir efeito-preço, efeito-consumo, efeito-loja e efeito-fidelidade.** O valor total pago por um produto ou categoria muda por motivos independentes entre si:
 - **Efeito-preço**: o preço unitário do produto mudou ao longo do tempo (isso é inflação de fato).
 - **Efeito-consumo**: o usuário comprou mais ou menos quantidade (não é inflação).
 - **Efeito-loja**: o produto foi comprado em estabelecimentos diferentes, que cobram preços diferentes pelo mesmo item no mesmo período (também não é inflação — é diferença de preço entre lojas).
+- **Efeito-fidelidade/CPF**: muitas notas fiscais brasileiras mostram se o CPF do cliente foi informado na compra ("CONSUMIDOR IDENTIFICADO" com CPF vs. "CONSUMIDOR NÃO IDENTIFICADO"). Programas de fidelidade/CPF na nota às vezes aplicam desconto automático — uma variação de preço pode ser só isso, não inflação nem efeito-loja.
 
-Uma variação no valor total, sozinha, não separa nenhum desses três. Sempre que for falar em "inflação" (variação de preço no tempo), a comparação correta é: **mesmo produto, mesma origem/loja (coluna Origem), valor unitário, em datas diferentes**. Se a origem mudar entre os dois pontos comparados, isso é um sinal de alerta — a diferença pode ser efeito-loja, não inflação.
+Uma variação no valor total, sozinha, não separa nenhum desses efeitos. Sempre que for falar em "inflação" (variação de preço no tempo), a comparação correta é: **mesmo produto, mesma origem/loja (coluna Origem), valor unitário, em datas diferentes, idealmente com o mesmo status de CPF informado**. Se a origem mudar entre os dois pontos comparados, isso é um sinal de alerta — a diferença pode ser efeito-loja, não inflação. Da mesma forma, se o status de CPF/fidelidade mudar entre as duas notas comparadas, avise que a diferença pode ser efeito-fidelidade, não inflação.
+
+**Registrando o status de CPF**: sempre que a nota mostrar claramente se o CPF foi informado ou não, anote isso — pode ser uma coluna "CPF informado" na tabela de lançamentos, ou uma observação entre parênteses no item/origem quando fizer diferença para a comparação. Nas notas lançadas até 17/09/2026 (Supermercado Dalben), **todas mostraram "CONSUMIDOR NÃO IDENTIFICADO"** — ou seja, esse efeito ainda não apareceu nos dados reais, mas deve ser monitorado a partir de agora.
 
 **Checagens de prateleira contam como dado de preço válido** para todas as comparações desta seção (efeito-preço, efeito-loja), mesmo quando o produto foi rejeitado — o preço exposto na loja é real independentemente da decisão de compra. A única coisa que elas nunca entram é no cálculo de gasto total/efeito-consumo (isso é exclusivo das compras de fato).
 
