@@ -51,3 +51,6 @@ A partir de 06/09/2026, os gastos são lançados **por item** (produto individua
 | 13/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,108 kg | 61,99/kg | 6,69 | Supermercado Dalben |
 | 13/09 | Alimentação | Laticínios | Leite Ninho 1L Integral | 1 un | 7,49 | 7,49 | Supermercado Dalben |
 | 13/09 | Alimentação | Padaria/Doces | Bolo de Chocolate Tira | 0,248 kg | 54,99/kg | 13,64 | Supermercado Dalben |
+| 17/09 | Alimentação | Padaria/Doces | Bolo Pullman 250g Frape | 1 un | 8,98 | 8,98 | Supermercado Dalben |
+| 17/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 8,49 | 8,49 | Supermercado Dalben |
+| 17/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,134 kg | 61,99/kg | 8,31 | Supermercado Dalben |
