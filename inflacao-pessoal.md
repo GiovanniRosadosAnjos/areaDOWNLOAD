@@ -21,36 +21,38 @@ A partir de 06/09/2026, os gastos são lançados **por item** (produto individua
 
 **Descontos por item:** quando a nota traz um desconto aplicado a um item específico, o valor unitário e o valor total registrados já refletem o preço efetivamente pago (líquido do desconto), com uma observação na coluna Item indicando o preço de tabela original.
 
+**CPF/Fidelidade:** a Dalben tem um programa chamado "Cliente Estilo" — informar o CPF no caixa (independente de aparecer impresso na nota como "identificado") pode aplicar desconto. A coluna "CPF/Fidelidade" registra se isso foi informado naquela compra. Lançamentos de 05/09 a 13/09 estão marcados como "Não confirmado" porque não perguntei na hora — a partir de 17/09 essa informação passou a ser coletada.
+
 ## 2026
 
 ### Setembro — Lançamentos itemizados
-| Data | Categoria | Subcategoria | Item | Qtd | Valor unit. (R$) | Valor total (R$) | Origem |
-|------|-----------|--------------|------|-----|-------------------|-------------------|--------|
-| 05/09 | Alimentação | Verduras/Legumes | Cebola | 0,165 kg | 8,99/kg | 1,48 | Supermercado Dalben |
-| 05/09 | Alimentação | Frutas | Limão Tahiti | 0,425 kg | 14,99/kg | 6,37 | Supermercado Dalben |
-| 05/09 | Alimentação | Carnes | Carne bovina (Coxão Duro) | 0,620 kg | 58,99/kg | 36,57 | Supermercado Dalben |
-| 05/09 | Alimentação | Carnes | Frango a Passarinho | 0,228 kg | 31,99/kg | 7,29 | Supermercado Dalben |
-| 06/09 | Alimentação | Verduras/Legumes | Batata | 0,775 kg | 8,99/kg | 6,97 | Supermercado Dalben |
-| 06/09 | Alimentação | Carnes | Fraldinha | 0,648 kg | 65,99/kg | 42,76 | Supermercado Dalben |
-| 06/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 8,49 | 8,49 | Supermercado Dalben |
-| 06/09 | Alimentação | Frutas | Banana Maçã | 0,470 kg | 9,99/kg | 4,70 | Supermercado Dalben |
-| 06/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,124 kg | 61,99/kg | 7,69 | Supermercado Dalben |
-| 06/09 | Alimentação | Grãos/Cereais | Feijão Camil Carioca 1kg | 1 un | 9,49 | 9,49 | Supermercado Dalben |
-| 06/09 | Alimentação | Padaria/Doces | Goma de Mascar Trident 8g | 1 un | 3,69 | 3,69 | Supermercado Dalben |
-| 10/09 | Alimentação | Padaria/Doces | Pão Pullman 480g Tradicional | 1 un | 8,48 | 8,48 | Supermercado Dalben |
-| 10/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 10,49 | 10,49 | Supermercado Dalben |
-| 10/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,114 kg | 61,99/kg | 7,07 | Supermercado Dalben |
-| 10/09 | Alimentação | Outros | Panqueca de Frios (tabela 45,99/kg, com desconto de R$7,91) | 0,344 kg | 22,99/kg | 7,91 | Supermercado Dalben |
-| 12/09 | Alimentação | Verduras/Legumes | Batata | 0,755 kg | 8,99/kg | 6,79 | Supermercado Dalben |
-| 12/09 | Alimentação | Frutas | Manga Tommy | 1,000 kg | 11,99/kg | 11,99 | Supermercado Dalben |
-| 12/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 10,49 | 10,49 | Supermercado Dalben |
-| 12/09 | Alimentação | Carnes | Fraldinha | 0,604 kg | 77,90/kg | 47,05 | Supermercado Dalben |
-| 12/09 | Alimentação | Outros | Maionese Hellmann's 500g Tradicional | 1 un | 11,99 | 11,99 | Supermercado Dalben |
-| 13/09 | Alimentação | Padaria/Doces | Bolo Panco 300g Chocoboy | 1 un | 14,49 | 14,49 | Supermercado Dalben |
-| 13/09 | Alimentação | Padaria/Doces | Chocolate Talento 85g | 1 un | 8,99 | 8,99 | Supermercado Dalben |
-| 13/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,108 kg | 61,99/kg | 6,69 | Supermercado Dalben |
-| 13/09 | Alimentação | Laticínios | Leite Ninho 1L Integral | 1 un | 7,49 | 7,49 | Supermercado Dalben |
-| 13/09 | Alimentação | Padaria/Doces | Bolo de Chocolate Tira | 0,248 kg | 54,99/kg | 13,64 | Supermercado Dalben |
-| 17/09 | Alimentação | Padaria/Doces | Bolo Pullman 250g Frape | 1 un | 8,98 | 8,98 | Supermercado Dalben |
-| 17/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 8,49 | 8,49 | Supermercado Dalben |
-| 17/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,134 kg | 61,99/kg | 8,31 | Supermercado Dalben |
+| Data | Categoria | Subcategoria | Item | Qtd | Valor unit. (R$) | Valor total (R$) | Origem | CPF/Fidelidade |
+|------|-----------|--------------|------|-----|-------------------|-------------------|--------|-----------------|
+| 05/09 | Alimentação | Verduras/Legumes | Cebola | 0,165 kg | 8,99/kg | 1,48 | Supermercado Dalben | Não confirmado |
+| 05/09 | Alimentação | Frutas | Limão Tahiti | 0,425 kg | 14,99/kg | 6,37 | Supermercado Dalben | Não confirmado |
+| 05/09 | Alimentação | Carnes | Carne bovina (Coxão Duro) | 0,620 kg | 58,99/kg | 36,57 | Supermercado Dalben | Não confirmado |
+| 05/09 | Alimentação | Carnes | Frango a Passarinho | 0,228 kg | 31,99/kg | 7,29 | Supermercado Dalben | Não confirmado |
+| 06/09 | Alimentação | Verduras/Legumes | Batata | 0,775 kg | 8,99/kg | 6,97 | Supermercado Dalben | Não confirmado |
+| 06/09 | Alimentação | Carnes | Fraldinha | 0,648 kg | 65,99/kg | 42,76 | Supermercado Dalben | Não confirmado |
+| 06/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 8,49 | 8,49 | Supermercado Dalben | Não confirmado |
+| 06/09 | Alimentação | Frutas | Banana Maçã | 0,470 kg | 9,99/kg | 4,70 | Supermercado Dalben | Não confirmado |
+| 06/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,124 kg | 61,99/kg | 7,69 | Supermercado Dalben | Não confirmado |
+| 06/09 | Alimentação | Grãos/Cereais | Feijão Camil Carioca 1kg | 1 un | 9,49 | 9,49 | Supermercado Dalben | Não confirmado |
+| 06/09 | Alimentação | Padaria/Doces | Goma de Mascar Trident 8g | 1 un | 3,69 | 3,69 | Supermercado Dalben | Não confirmado |
+| 10/09 | Alimentação | Padaria/Doces | Pão Pullman 480g Tradicional | 1 un | 8,48 | 8,48 | Supermercado Dalben | Não confirmado |
+| 10/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 10,49 | 10,49 | Supermercado Dalben | Não confirmado |
+| 10/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,114 kg | 61,99/kg | 7,07 | Supermercado Dalben | Não confirmado |
+| 10/09 | Alimentação | Outros | Panqueca de Frios (tabela 45,99/kg, com desconto de R$7,91) | 0,344 kg | 22,99/kg | 7,91 | Supermercado Dalben | Não confirmado |
+| 12/09 | Alimentação | Verduras/Legumes | Batata | 0,755 kg | 8,99/kg | 6,79 | Supermercado Dalben | Não confirmado |
+| 12/09 | Alimentação | Frutas | Manga Tommy | 1,000 kg | 11,99/kg | 11,99 | Supermercado Dalben | Não confirmado |
+| 12/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 10,49 | 10,49 | Supermercado Dalben | Não confirmado |
+| 12/09 | Alimentação | Carnes | Fraldinha | 0,604 kg | 77,90/kg | 47,05 | Supermercado Dalben | Não confirmado |
+| 12/09 | Alimentação | Outros | Maionese Hellmann's 500g Tradicional | 1 un | 11,99 | 11,99 | Supermercado Dalben | Não confirmado |
+| 13/09 | Alimentação | Padaria/Doces | Bolo Panco 300g Chocoboy | 1 un | 14,49 | 14,49 | Supermercado Dalben | Não confirmado |
+| 13/09 | Alimentação | Padaria/Doces | Chocolate Talento 85g | 1 un | 8,99 | 8,99 | Supermercado Dalben | Não confirmado |
+| 13/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,108 kg | 61,99/kg | 6,69 | Supermercado Dalben | Não confirmado |
+| 13/09 | Alimentação | Laticínios | Leite Ninho 1L Integral | 1 un | 7,49 | 7,49 | Supermercado Dalben | Não confirmado |
+| 13/09 | Alimentação | Padaria/Doces | Bolo de Chocolate Tira | 0,248 kg | 54,99/kg | 13,64 | Supermercado Dalben | Não confirmado |
+| 17/09 | Alimentação | Padaria/Doces | Bolo Pullman 250g Frape | 1 un | 8,98 | 8,98 | Supermercado Dalben | Sim (Cliente Estilo) |
+| 17/09 | Alimentação | Bebidas | Refrigerante Coca-Cola 1,5L Zero | 1 un | 8,49 | 8,49 | Supermercado Dalben | Sim (Cliente Estilo) |
+| 17/09 | Alimentação | Padaria/Doces | Lua de Mel (recheado) | 0,134 kg | 61,99/kg | 8,31 | Supermercado Dalben | Sim (Cliente Estilo) |
